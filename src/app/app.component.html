@@ -1,7 +1,11 @@
 <main>
-  <app-learning-resources />
+	<app-learning-resources/>
 
-  <hr />
+	<hr/>
 
-  <app-auth />
+	<app-auth/>
+
+	@if (isAdmin()) {
+		<p>Only Admin should see this!</p>
+	}
 </main>
